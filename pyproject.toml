@@ -2,13 +2,14 @@
 requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
+
 [project]
 name = "colorengine"
 authors = [
     {name = "Casper van Elteren", email = "caspervanelteren@gmail.com"},
 ]
 description = "A collection of custom matplotlib colormaps"
-readme = "README.md"
+readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.6"
 license = {text = "MIT"}
 classifiers = [
@@ -30,10 +31,14 @@ dynamic = ["version"]
 
 [tool.setuptools_scm]
 write_to = "colorengine/_version.py"
+version_scheme = "post-release"
+local_scheme = "no-local-version"
 
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["colorengine*"]
+
+
 
 [tool.setuptools.package-data]
 colorengine = ["*.json", "*.txt"]  # Add any data files your package needs
