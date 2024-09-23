@@ -1,9 +1,0 @@
-name: colorengine-env
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=${{ matrix.python-version }}
-  - matplotlib
-  - flake8
-  - pytest
