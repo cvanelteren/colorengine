@@ -29,7 +29,8 @@ def show_colormaps():
     cmaps = [
         attr
         for attr in globals()
-        if isinstance(globals()[attr], mpl.colors.ListedColormap) and attr not in ["key", "value"]
+        if isinstance(globals()[attr], mpl.colors.ListedColormap)
+        and attr not in ["key", "value"]
     ]
 
     n = len(cmaps)

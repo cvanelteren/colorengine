@@ -1,4 +1,3 @@
-
 import matplotlib as mpl
 from matplotlib.colors import ListedColormap
 
