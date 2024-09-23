@@ -5,6 +5,7 @@ __all__ = ["cmap", "cmap_r"]
 __author__ = "Casper van Elteren"
 __package__ = "colorengine"
 cm_type = "discrete"
+name = "ce.default"
 
 cm_data = [
     "#FF4136",
@@ -28,12 +29,12 @@ cm_data = [
     "#607D8B",
     "#795548",
 ]
-cmap = ListedColormap(cm_data, name="ce.default")
+cmap = ListedColormap(cm_data, name=name)
 cmap_r = cmap.reversed()
 
 mpl.colormaps.register(cmap=cmap)
 mpl.colormaps.register(cmap=cmap_r)
 
 if __name__ != "__main__":
-    globals()["ce.default"] = cmap
-    globals()["ce.default_r"] = cmap_r
+    globals()[name] = cmap
+    globals()[name + "_r"] = cmap_r
