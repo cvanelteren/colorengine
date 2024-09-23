@@ -29,7 +29,7 @@ def show_colormaps():
     cmaps = [
         attr
         for attr in globals()
-        if isinstance(globals()[attr], mpl.colors.ListedColormap)
+        if isinstance(globals()[attr], mpl.colors.ListedColormap) and attr not in ["key", "value"]
     ]
 
     n = len(cmaps)
@@ -46,6 +46,4 @@ def show_colormaps():
         ax.set_title(name, fontsize=10, loc="left")
         ax.set_xticks([])
         ax.set_yticks([])
-
-    plt.show(block=1)
-    plt.savefig("./figures/banner.png")
+    return fig, ax
