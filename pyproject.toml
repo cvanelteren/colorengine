@@ -29,7 +29,8 @@ dynamic = ["version"]
 
 
 [tool.setuptools.packages.find]
-where = ["colorengine"]
+where = ["."]
+include = ["colorengine"]
 
 [project.urls]
 Homepage = "https://github.com/cvanelteren/colorengine"
