@@ -1,5 +1,10 @@
 ![GitHub Actions](https://github.com/cvanelteren/colorengine/actions/workflows/build.yml/badge.svg)
-# ColorEngine
+
+<div align="right">
+  <img src="./figures/logo_ce.webp" width="10%" alt="Color Engine Logo">
+</div>
+
+# Color Engine
 
 ColorEngine is a Python package that provides a collection of custom colormaps for use with Matplotlib. It offers an easy-to-use interface for accessing and visualizing a variety of color schemes, enhancing your data visualization capabilities.
 
