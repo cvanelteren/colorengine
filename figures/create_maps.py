@@ -6,3 +6,4 @@ import colorengine as ce
 
 fig, ax = ce.show_colormaps()
 fig.savefig("./colormaps.png")
+plt.show(block = 1)

@@ -9,6 +9,8 @@ def auto_import_colormaps():
         "vivid",
         "icecream",
         "distinct",
+        "french",
+        "warm",
     ]
 
     for module_name in modules_to_import:
