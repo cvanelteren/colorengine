@@ -17,7 +17,7 @@ cm_data = [
     "#ca6702",
     "#bb3e03",
     "#ae2012",
-    "#9b2226"
+    "#9b2226",
 ]
 cmap = ListedColormap(cm_data, name=name)
 cmap_r = cmap.reversed()
