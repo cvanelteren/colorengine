@@ -1,7 +1,7 @@
 ![GitHub Actions](https://github.com/cvanelteren/colorengine/actions/workflows/build.yml/badge.svg)
 
 <div align="center">
-  <img src="./figures/logo2.png" width="10%" alt="Color Engine Logo">
+  <img src="./figures/logo2.png" width="100%" alt="Color Engine Logo">
 </div>
 
 # Color Engine
